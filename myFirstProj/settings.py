@@ -25,7 +25,7 @@ SECRET_KEY = 'n_z4#@cjga(zf*9r1v(7g(c0wx$esi*&e#+odncz8c90e1^5q)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pypiuser.pythonanywhere.com']
 
 
 # Application definition
@@ -128,3 +128,4 @@ MEDIA_URL = '/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL='blog-index'
 LOGIN_URL='login'
+STATIC_ROOT = '/home/pypiuser/pypitest/blog/static'
