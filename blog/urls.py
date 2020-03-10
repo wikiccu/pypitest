@@ -1,10 +1,10 @@
 from django.urls import path
+from .views import PostListView
 from . import views
-from users import views as user_views
+
 
 urlpatterns = [
-    path('',views.index, name='blog-index'),
-    path('register/', user_views.register, name="register"),
+    path('',PostListView.as_view(), name='blog-index'),
     path('about/',views.about, name='blog-about'),
 
 ]
