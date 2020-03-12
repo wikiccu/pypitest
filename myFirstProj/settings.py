@@ -25,7 +25,7 @@ SECRET_KEY = 'n_z4#@cjga(zf*9r1v(7g(c0wx$esi*&e#+odncz8c90e1^5q)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pypiuser.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
@@ -126,6 +126,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-LOGIN_REDIRECT_URL='blog-index'
-LOGIN_URL='login'
+
+LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_URL = 'login'
 STATIC_ROOT = '/home/pypiuser/pypitest/blog/static'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
