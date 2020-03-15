@@ -1,31 +1,79 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/material-icons.woff2') format('woff2');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: rtl;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+/*------------------------------*/
+@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/yekan/BYEKAN.eot');
+  src: url('../fonts/yekan/BYEKAN.eot?#iefix') format('embedded-opentype'), url('../fonts/yekan/BYEKAN.woff') format('woff'), url('../fonts/yekan/BYEKAN.ttf') format('truetype'), url('../fonts/yekan/BYEKAN.svg#font1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{direction:rtl} 
 body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
+  text-align: right;
+  font-family: 'Yekan', 'b Yekan', Tahoma, sans-serif;
+  font-size: small;
+  direction:rtl
+}
+.left{text-align:left;}
+.right{
+  position: relative;
+  right: auto;
+  text-align:right;
+  background: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
+  text-align: right;
 }
 
 ul {
   margin: 0;
+  text-align: right;
 }
 
 .bg-steel {
   background-color: #5f788a;
+  text-align: right;
 }
 
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
+  text-align: right;
 }
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ffffff;
+  text-align: right;
 }
 
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
+  text-align: right;
 }
 
 .content-section {
@@ -34,42 +82,50 @@ ul {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  text-align: right;
 }
 
 .article-title {
   color: #444444;
+  text-align: right;
 }
 
 a.article-title:hover {
   color: #428bca;
   text-decoration: none;
+  text-align: right;
 }
 
 .article-content {
   white-space: pre-line;
+  text-align: right;
 }
 
 .article-img {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+  text-align: right;
 }
 
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3
+  text-align: right;
 }
 
 .article-metadata a:hover {
   color: #333;
   text-decoration: none;
+  text-align: right;
 }
 
 .article-svg {
   width: 25px;
   height: 25px;
   vertical-align: middle;
+  text-align: right;
 }
 
 .account-img {
@@ -77,8 +133,10 @@ a.article-title:hover {
   width: 125px;
   margin-right: 20px;
   margin-bottom: 16px;
+  text-align: right;
 }
 
 .account-heading {
   font-size: 2.5rem;
+  text-align: right;
 }
